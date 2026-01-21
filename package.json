@@ -1,17 +1,17 @@
 {
   "name": "@chenyeh_chien/global-styles",
   "version": "1.0.0",
-  "main": "./dist/global.css",
+  "main": "./dist/base.css",
   "files": [
     "dist",
     "src"
   ],
   "exports": {
-    ".": "./dist/global.css",
+    ".": "./dist/base.css",
     "./theme/*": "./src/themes/*.css"
   },
   "scripts": {
-    "build": "tailwindcss -i ./src/global.css -o ./dist/global.css"
+    "build": "tailwindcss -i ./src/base.css -o ./dist/base.css"
   },
   "repository": {
     "type": "git",
