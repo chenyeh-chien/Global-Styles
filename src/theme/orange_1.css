@@ -125,3 +125,19 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* 隱藏 Chrome/Edge 的時鐘圖示 */
+input[type="time"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+/* 針對 Firefox (雖然 Firefox 預設通常不顯示圖示) */
+input[type="time"] {
+  scrollbar-width: none;
+  display: flex;
+  align-items: center;
+  appearance: none;
+  /* 嘗試移除原生外觀 */
+  -webkit-appearance: none;
+}
